@@ -92,14 +92,14 @@ class WingetPackageManager(PackageManagerWithSources):
                 if line:
                     rawOutput += line
                     if not hasShownId:
-                        if " Id " in line:
+                        if " ID " in line:
                             line = line.replace("\x08-\x08\\\x08|\x08 \r", "")
                             for char in ("\r", "/", "|", "\\", "-"):
                                 line = line.split(char)[-1].strip()
                             hasShownId = True
-                            idPosition = len(line.split("Id")[0])
+                            idPosition = len(line.split("ID")[0])
                             versionPosition = len(line.split("Version")[0])
-                            sourcePosition = len(line.split("Source")[0])
+                            sourcePosition = len(line.split("Quelle")[0])
                             if len(line) == sourcePosition:
                                 noSourcesAvailable = True
                                 print("🟡 Winget reported no sources on getPackagesForQuery")
@@ -205,15 +205,15 @@ class WingetPackageManager(PackageManagerWithSources):
                 line: str = str(p.stdout.readline().strip(), "utf-8", errors="ignore")
                 rawoutput += "\n" + line
                 if not hasShownId:
-                    if " Id " in line:
+                    if "Quelle" in line:
                         line = line.replace("\x08-\x08\\\x08|\x08 \r", "")
                         for char in ("\r", "/", "|", "\\", "-"):
                             line = line.split(char)[-1].strip()
                         hasShownId = True
-                        idPosition = len(line.split("Id")[0])
+                        idPosition = len(line.split("ID")[0])
                         versionPosition = len(line.split("Version")[0])
-                        newVerPosition = len(line.split("Available")[0])
-                        sourcePosition = len(line.split("Source")[0])
+                        newVerPosition = len(line.split("Verfügbar")[0])
+                        sourcePosition = len(line.split("Quelle")[0])
                         if len(line) == sourcePosition:
                             noSourcesAvailable = True
                             print("🟡 Winget reported no sources on getAvailableUpdates")
@@ -356,14 +356,14 @@ class WingetPackageManager(PackageManagerWithSources):
                 line: str = str(p.stdout.readline().strip(), "utf-8", errors="ignore")
                 rawoutput += "\n" + line
                 if not hasShownId:
-                    if " Id " in line:
+                    if "Quelle" in line:
                         line = line.replace("\x08-\x08\\\x08|\x08 \r", "")
                         for char in ("\r", "/", "|", "\\", "-"):
                             line = line.split(char)[-1].strip()
                         hasShownId = True
-                        idPosition = len(line.split("Id")[0])
+                        idPosition = len(line.split("ID")[0])
                         versionPosition = len(line.split("Version")[0])
-                        sourcePosition = len(line.split("Source")[0])
+                        sourcePosition = len(line.split("Quelle")[0])
                     else:
                         pass
                 elif "---" in line:
