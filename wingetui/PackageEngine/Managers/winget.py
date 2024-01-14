@@ -92,15 +92,16 @@ class WingetPackageManager(PackageManagerWithSources):
                 if line:
                     rawOutput += line
                     if not hasShownId:
-                        if " Id " in line:
+                        if len(line) > 60: # TODO find better check
                             line = line.replace("\x08-\x08\\\x08|\x08 \r", "")
                             for char in ("\r", "/", "|", "\\", "-"):
                                 line = line.split(char)[-1].strip()
                             hasShownId = True
-                            idPosition = len(line.split("Id")[0])
-                            versionPosition = len(line.split("Version")[0])
-                            sourcePosition = len(line.split("Source")[0])
-                            if len(line) == sourcePosition:
+                            column_idx_list = self.FindColumnPositions(line, 3)
+                            idPosition = column_idx_list[0]
+                            versionPosition = column_idx_list[1]
+                            sourcePosition = column_idx_list[2]
+                            if len(column_idx_list) == 2:
                                 noSourcesAvailable = True
                                 print("🟡 Winget reported no sources on getPackagesForQuery")
 
@@ -187,6 +188,26 @@ class WingetPackageManager(PackageManagerWithSources):
             report(e)
             return packages
 
+    def FindColumnPositions(self, line:str, ColumnCountExpected:int) -> list[int]:
+        my_list = []
+        idx: int = 0
+        colcnt:int = 0
+        while idx < len(line) and colcnt < ColumnCountExpected:
+            while idx < len(line): 
+                if line[idx] != ' ':
+                    idx += 1
+                else:
+                    break
+            while idx < len(line):
+                if line[idx] == ' ':
+                    idx += 1
+                else:
+                    my_list.append(idx)
+                    colcnt += 1
+                    break
+        return my_list
+        
+
     def getAvailableUpdates(self) -> list[UpgradablePackage]:
         f"""
         Will retieve the upgradable packages by {self.NAME} in the format of a list[UpgradablePackage] object.
@@ -205,16 +226,19 @@ class WingetPackageManager(PackageManagerWithSources):
                 line: str = str(p.stdout.readline().strip(), "utf-8", errors="ignore")
                 rawoutput += "\n" + line
                 if not hasShownId:
-                    if " Id " in line:
+                    # if " Id " in line:
+                    if len(line) > 60: # TODO find better check
                         line = line.replace("\x08-\x08\\\x08|\x08 \r", "")
                         for char in ("\r", "/", "|", "\\", "-"):
                             line = line.split(char)[-1].strip()
                         hasShownId = True
-                        idPosition = len(line.split("Id")[0])
-                        versionPosition = len(line.split("Version")[0])
-                        newVerPosition = len(line.split("Available")[0])
-                        sourcePosition = len(line.split("Source")[0])
-                        if len(line) == sourcePosition:
+                        column_idx_list = self.FindColumnPositions(line, 4)
+                        idPosition = column_idx_list[0]
+                        versionPosition = column_idx_list[1]
+                        newVerPosition = column_idx_list[2]
+                        sourcePosition = column_idx_list[3]
+
+                        if len(column_idx_list) == 3:
                             noSourcesAvailable = True
                             print("🟡 Winget reported no sources on getAvailableUpdates")
                     else:
@@ -356,14 +380,15 @@ class WingetPackageManager(PackageManagerWithSources):
                 line: str = str(p.stdout.readline().strip(), "utf-8", errors="ignore")
                 rawoutput += "\n" + line
                 if not hasShownId:
-                    if " Id " in line:
+                    if len(line) > 60: # TODO find better check
                         line = line.replace("\x08-\x08\\\x08|\x08 \r", "")
                         for char in ("\r", "/", "|", "\\", "-"):
                             line = line.split(char)[-1].strip()
                         hasShownId = True
-                        idPosition = len(line.split("Id")[0])
-                        versionPosition = len(line.split("Version")[0])
-                        sourcePosition = len(line.split("Source")[0])
+                        column_idx_list = self.FindColumnPositions(line, 3)
+                        idPosition = column_idx_list[0]
+                        versionPosition = column_idx_list[1]
+                        sourcePosition = column_idx_list[2]
                     else:
                         pass
                 elif "---" in line:
