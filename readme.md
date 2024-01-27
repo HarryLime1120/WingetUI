@@ -114,7 +114,7 @@ In order to translate WingetUI to other languages or to update an old translatio
 | Language | Translated | Translator(s) |
 | :-- | :-- | --- |
 | <img src='https://flagcdn.com/sa.svg' width=20> &nbsp; Arabic - عربي‎ | 87% | [Abdu11ahAS](https://github.com/Abdu11ahAS), [FancyCookin](https://github.com/FancyCookin), [mo9a7i](https://github.com/mo9a7i) |
-| <img src='https://flagcdn.com/bg.svg' width=20> &nbsp; Bulgarian - български | 89% | Vasil Kolev |
+| <img src='https://flagcdn.com/bg.svg' width=20> &nbsp; Bulgarian - български | 90% | Vasil Kolev |
 | <img src='https://flagcdn.com/bd.svg' width=20> &nbsp; Bangla - বাংলা | 45% | [fluentmoheshwar](https://github.com/fluentmoheshwar), Mushfiq Iqbal Rayon, Nilavra Bhattacharya |
 | <img src='https://flagcdn.com/ad.svg' width=20> &nbsp; Catalan - Català | 100% | [marticliment](https://github.com/marticliment) |
 | <img src='https://flagcdn.com/cz.svg' width=20> &nbsp; Czech - Čeština | 94% | [panther7](https://github.com/panther7) |
@@ -131,17 +131,18 @@ In order to translate WingetUI to other languages or to update an old translatio
 | <img src='https://flagcdn.com/hu.svg' width=20> &nbsp; Hungarian - Magyar | 100% | [gidano](https://github.com/gidano) |
 | <img src='https://flagcdn.com/it.svg' width=20> &nbsp; Italian - Italiano | 100% | David Senoner, [giacobot](https://github.com/giacobot), [maicol07](https://github.com/maicol07), [mapi68](https://github.com/mapi68), [mrfranza](https://github.com/mrfranza), Rosario Di Mauro |
 | <img src='https://flagcdn.com/id.svg' width=20> &nbsp; Indonesian - Bahasa Indonesia | 88% | [arthackrc](https://github.com/arthackrc), [joenior](https://github.com/joenior) |
-| <img src='https://flagcdn.com/jp.svg' width=20> &nbsp; Japanese - 日本語 | 86% | [nob-swik](https://github.com/nob-swik), sho9029, Yuki Takase |
-| <img src='https://flagcdn.com/kr.svg' width=20> &nbsp; Korean - 한국어 | 99% | [minbert](https://github.com/minbert), [shblue21](https://github.com/shblue21) |
+| <img src='https://flagcdn.com/jp.svg' width=20> &nbsp; Japanese - 日本語 | 93% | [nob-swik](https://github.com/nob-swik), sho9029, Takaki IEKURA, Yuki Takase |
+| <img src='https://flagcdn.com/kr.svg' width=20> &nbsp; Korean - 한국어 | 100% | [minbert](https://github.com/minbert), [shblue21](https://github.com/shblue21) |
 | <img src='https://flagcdn.com/mk.svg' width=20> &nbsp; Macedonian - Македонски | 95% | LordDeatHunter |
-| <img src='https://flagcdn.com/no.svg' width=20> &nbsp; Norwegian (bokmål) | 84% | [jomaskm](https://github.com/jomaskm) |
+| <img src='https://flagcdn.com/no.svg' width=20> &nbsp; Norwegian (bokmål) - Norsk Bokmål | 85% | [jomaskm](https://github.com/jomaskm) |
+| <img src='https://flagcdn.com/nn-NO.svg' width=20> &nbsp; Norwegian (nynorsk) - Norsk nynorsk | 8% |  |
 | <img src='https://flagcdn.com/nl.svg' width=20> &nbsp; Dutch - Nederlands | 100% | [abbydiode](https://github.com/abbydiode), [Stephan-P](https://github.com/Stephan-P) |
 | <img src='https://flagcdn.com/pl.svg' width=20> &nbsp; Polish - Polski | 100% | [KamilZielinski](https://github.com/KamilZielinski), [kwiateusz](https://github.com/kwiateusz), [RegularGvy13](https://github.com/RegularGvy13) |
 | <img src='https://flagcdn.com/br.svg' width=20> &nbsp; Portuguese (Brazil) | 96% | [maisondasilva](https://github.com/maisondasilva), [ppvnf](https://github.com/ppvnf), [wanderleihuttel](https://github.com/wanderleihuttel) |
 | <img src='https://flagcdn.com/pt.svg' width=20> &nbsp; Portuguese (Portugal) | 96% | [PoetaGA](https://github.com/PoetaGA), [ppvnf](https://github.com/ppvnf) |
 | <img src='https://flagcdn.com/ro.svg' width=20> &nbsp; Romanian - Română | 100% | Mihai Vasiliu, TZACANEL |
 | <img src='https://flagcdn.com/ru.svg' width=20> &nbsp; Russian - Русский | 89% | [bropines](https://github.com/bropines), [flatron4eg](https://github.com/flatron4eg), [katrovsky](https://github.com/katrovsky), Sergey, [sklart](https://github.com/sklart) |
-| <img src='https://flagcdn.com/rs.svg' width=20> &nbsp; Serbian - Srpski | 96% | [daVinci13](https://github.com/daVinci13), Nemanja Djurcic |
+| <img src='https://flagcdn.com/rs.svg' width=20> &nbsp; Serbian - Srpski | 100% | [daVinci13](https://github.com/daVinci13), Nemanja Djurcic |
 | <img src='https://flagcdn.com/lk.svg' width=20> &nbsp; Sinhala - සිංහල | 9% | [SashikaSandeepa](https://github.com/SashikaSandeepa) |
 | <img src='https://flagcdn.com/si.svg' width=20> &nbsp; Slovene - Slovenščina | 88% | [rumplin](https://github.com/rumplin) |
 | <img src='https://flagcdn.com/ph.svg' width=20> &nbsp; Tagalog - Tagalog | 21% | lasersPew |
@@ -152,7 +153,7 @@ In order to translate WingetUI to other languages or to update an old translatio
 | <img src='https://flagcdn.com/cn.svg' width=20> &nbsp; Simplified Chinese (China) | 100% | Aaron Liu, [adfnekc](https://github.com/adfnekc), BUGP Association, ciaran, CnYeSheng, Cololi |
 | <img src='https://flagcdn.com/tw.svg' width=20> &nbsp; Traditional Chinese (Taiwan) | 100% | Aaron Liu, CnYeSheng, Cololi, [yrctw](https://github.com/yrctw) |
 
-Last updated: Sun Jan 14 13:11:55 2024
+Last updated: Sat Jan 27 00:09:53 2024
 <!-- END Autogenerated translations -->
 
 
@@ -223,7 +224,7 @@ To mitigate the risks of downloading malware, Microsoft has implemented a few ch
 <br><p align="center"><i>Check out the <a href="https://github.com/marticliment/WingetUI/wiki">Wiki</a> for more information!</i></p>
 
 ## Command-line parameters:
-`--daemon`: Start WingetUI without spawnign a new window. WingetUI will run minimized on the system tray. WingetUI is called with this parameter when launched at startup.<br>
+`--daemon`: Start WingetUI without spawnign a new window. WingetUI will run minimized on the system tray. WingetUI is called with this parameter when launched at startup. **Autostart WingetUI in the notifications area** must be enabled in order for this paramater to work.<br>
 `--welcomewizard` (or simply `--welcome`): Show a window to choose which package managers to use.<br>
 `--updateapps`: Enable automatic install of available updates.
 

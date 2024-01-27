@@ -6,23 +6,22 @@ untranslatedPercentage = {
   "bn": "45%",
   "cs": "94%",
   "da": "29%",
-  "de": "99%",
   "el": "72%",
   "fa": "71%",
+  "fi": "0%",
   "he": "72%",
   "hi": "81%",
   "hr": "86%",
   "id": "88%",
-  "ja": "86%",
-  "ko": "99%",
+  "ja": "93%",
   "mk": "95%",
-  "nb": "84%",
+  "nb": "85%",
+  "nn-NO": "8%",
   "pt_BR": "96%",
   "pt_PT": "96%",
   "ru": "89%",
   "si": "9%",
   "sl": "88%",
-  "sr": "96%",
   "sv": "0%",
   "tg": "21%",
   "tr": "85%",
@@ -81,6 +80,10 @@ languageCredits = {
     {
       "name": "mikkolukas",
       "link": "https://github.com/mikkolukas"
+    },
+    {
+      "name": "yrjarv",
+      "link": "https://github.com/yrjarv"
     }
   ],
   "de": [
@@ -169,6 +172,7 @@ languageCredits = {
       "link": "https://github.com/smsi2001"
     }
   ],
+  "fi": [],
   "fr": [
     {
       "name": "Evans Costa",
@@ -257,6 +261,10 @@ languageCredits = {
       "link": ""
     },
     {
+      "name": "Takaki IEKURA",
+      "link": ""
+    },
+    {
       "name": "Yuki Takase",
       "link": ""
     }
@@ -279,8 +287,12 @@ languageCredits = {
   ],
   "nb": [
     {
-      "name": "jomaskm",
-      "link": "https://github.com/jomaskm"
+      "name": "jonaskm",
+      "link": "https://github.com/jonaskm"
+    },
+    {
+      "name": "yrjarv",
+      "link": "https://github.com/yrjarv"
     }
   ],
   "nl": [
@@ -293,6 +305,7 @@ languageCredits = {
       "link": "https://github.com/Stephan-P"
     }
   ],
+  "nn-NO": [],
   "pl": [
     {
       "name": "KamilZielinski",
