@@ -135,7 +135,7 @@ class PowershellPackageManager(PackageManagerWithSources):
             packages: list[UpgradablePackage] = []
             p = subprocess.run(self.EXECUTABLE, input=bytes(Command, "utf-8"), stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd=os.getcwd(), env=os.environ.copy(), shell=True)
             rawoutput = "\n\n---------"
-            for line in p.stdout.decode("utf-8").split("\n"):
+            for line in p.stdout.decode("utf-8",errors='ignore').split("\n"):
                 rawoutput += "\n" + line
                 if line and not line.startswith(">>") and not line.startswith("PS "):
                     package = list(filter(None, line.split("|")))
